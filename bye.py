@@ -11,7 +11,7 @@ default_args = {
 }
 
 # Create a DAG object with the specified default arguments
-dag = DAG('hello_dag', default_args=default_args, schedule_interval=None)
+dag = DAG('bye_dag', default_args=default_args, schedule_interval=None)
 
 # Define the tasks
 start_task = DummyOperator(task_id='start_task', dag=dag)
